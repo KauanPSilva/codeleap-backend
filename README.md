@@ -46,56 +46,60 @@ Autentica o usuário e retorna o par access/refresh.
 
 Exemplo de body:
 
-json
-Copiar
-Editar
+```
 {
   "username": "seu_usuario",
   "password": "sua_senha"
 }
+```
 POST /api/token/refresh/
 Gera novo access token a partir de um refresh válido.
 
+Exemplo de body:
+```
+{
+  "refresh": "<seu_refresh_token>"
+}
+```
+
 📌 Endpoints da API
 Todos os endpoints exigem token JWT no header:
-
+```
 Authorization: Bearer <access_token>
-
+```
 🔹 GET /api/posts/
 Lista posts da API pública da CodeLeap, com filtros e ordenação.
 
 Query params:
 
-Parâmetro	Descrição
-username	Filtra posts de um usuário
-title	Filtra posts por título
-ordering	Ordenação por data (created, -created)
+Parâmetros:
+
+username:	Filtra posts de um usuário
+title:	Filtra posts por título
+ordering:	Ordenação por data (created, -created)
 
 🔹 POST /api/posts/
 Cria um novo post na API externa.
 
 Body:
 
-json
-Copiar
-Editar
+```
 {
   "username": "seu_usuario",
   "title": "Título do post",
   "content": "Conteúdo do post"
 }
+```
 🔹 PUT /api/posts/<int:post_id>/
 Atualiza título e conteúdo de um post.
 
 Body:
-
-json
-Copiar
-Editar
+```
 {
   "title": "Novo título",
   "content": "Novo conteúdo"
 }
+```
 🔹 DELETE /api/posts/<int:post_id>/
 Deleta um post.
 
@@ -109,21 +113,16 @@ Retorna todos os comentários locais do post.
 Cria um comentário no post.
 
 Body:
-
-json
-Copiar
-Editar
+```
 {
   "content": "Comentário do usuário"
 }
+```
 🔹 GET /api/mentions/
 Retorna todos os posts e comentários locais que mencionam o usuário autenticado com @username.
 
 Exemplo de resposta:
-
-json
-Copiar
-Editar
+```
 {
   "posts": [
     {
@@ -143,6 +142,7 @@ Editar
     }
   ]
 }
+```
 📁 Estrutura do Projeto
 codeleap-backend/
 │
