@@ -36,7 +36,7 @@ python manage.py migrate
 # Rode o servidor
 python manage.py runserver
 
----
+```
 
 🔐 Autenticação
 Utiliza JWT (via djangorestframework-simplejwt).
