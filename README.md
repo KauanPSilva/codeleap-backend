@@ -144,6 +144,7 @@ Exemplo de resposta:
 }
 ```
 📁 Estrutura do Projeto
+```
 codeleap-backend/
 │
 ├── codeleap_backend/         # Configurações principais do projeto Django
@@ -164,7 +165,7 @@ codeleap-backend/
 ├── db.sqlite3                # Banco de dados SQLite local
 ├── manage.py                 # Script de gerenciamento do Django
 └── requirements.txt          # Dependências do projeto
-
+```
 🧪 Testes
 Para rodar os testes unitários basta rodar no terminal: "python manage.py test"
 
