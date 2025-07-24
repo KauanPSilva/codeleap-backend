@@ -169,8 +169,12 @@ codeleap-backend/
 🧪 Testes
 Para rodar os testes unitários basta rodar no terminal: "python manage.py test"
 
-💬 Contato␣␣
-Para dúvidas ou sugestões:␣␣
-LinkedIn: www.linkedin.com/in/kauan-silva-9328a1251␣␣
-Email: kauanpsilva66@gmail.com␣␣
+💬 Contato␣
+
+Para dúvidas ou sugestões:
+
+LinkedIn: www.linkedin.com/in/kauan-silva-9328a1251
+
+Email: kauanpsilva66@gmail.com
+
 whatsapp: (24)992247844
